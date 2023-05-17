@@ -78,7 +78,7 @@
 
 				<div class="col-md-6 px-0">
 					<h1 class="display-4 font-italic">
-						Bana Ulaşın
+						Giriş Ekranı
 					</h1>
 				</div>
 
@@ -92,28 +92,19 @@
 
 		<div class="container">
 			
-			<form action="git.html" name="Form" onsubmit="return control()">
-
-				<div class="form-group">
-					<label for="name">İsim</label>
-					<input type="text" name="name" class="form-control" placeholder="İsminizi Girin">							
-					<small class="form-text text-muted">Zorunlu alan</small>
-				</div>
+			<form action="git-Login.php" method="POST">
 
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="text" name="email" class="form-control" placeholder="Emailinizi girin.">
-					<small class="form-text text-muted">Zorunlu alan</small>
+					<input type="text" name="email" class="form-control" placeholder="Email '123@sakarya.edu.tr'" required="required">
 				</div>
 
 				<div class="form-group">
-					<label for="message">Mesaj</label>
-					<textarea name="message" id="message" rows="5" class="form-control"></textarea>
+					<label for="password">Şifre</label>
+					<input type="password" name="password" class="form-control" placeholder="Şifre '123'" required="required">
 				</div>
 
-				<button class="btn btn-info" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
-
-				<button class="btn btn btn-info" type="submit" id="sub">Gönder</button>
+				<button class="btn btn btn-info" type="submit">Gönder</button>
 
 				<br><br><br>
 
@@ -124,44 +115,13 @@
 	</main>
 
 
-	<footer class="py-5 bg-info text-white text-center">
-		Web-Teknolojileri-Projesi © Mehmet Bedir Sevimli 2022
-	</footer>
+	
 
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-	<!-- JAVASCRIPT -->
-    <script>
-		function control()
-		{
-			var x = document.forms["Form"]["name"].value;
-			if (x == "") 
-			{
-				alert("İsim boş bırakılamaz");
-				return false;
-			}
-
-			var y = document.forms["Form"]["email"].value;
-			if (y == "") 
-			{
-				alert("Mail Kısmı Boş bırakılamaz");
-				return false;
-			}
-
-			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
-			if (forMail.test(y) == false) 
-			{
-				alert("Geçersiz Mail Adresi!!!");
-				return false;
-			}
-
-
-		}	
-
-    </script>	
 
 	
 

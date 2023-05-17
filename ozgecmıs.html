@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <!-- Responsive -->
@@ -15,16 +15,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Sitem</title>
     <link rel="stylesheet" href="style.css">
+    <title>Özgeçmis</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md fixed-top 
+    <nav class="navbar navbar-expand-md fixed-top 
 	bg-secondary navbar-white ">
 
 		<div class="container">
 		
-			<a href="web.html" class="navbar-brand text-white">
+			<a href="index.html" class="navbar-brand text-white">
 	  		  <i class="fas fa-grin-wink"></i>
 	  		   Talha
 	      	</a>
@@ -71,100 +71,112 @@
 		</div>
 	</nav>
     <header>
-
-		<div class="bg-info text-light jumbotron balikcilar-jumbotron">
+        <div class="bg-info text-light jumbotron">
 
 			<div class="container">
 
 				<div class="col-md-6 px-0">
 					<h1 class="display-4 font-italic">
-						Bana Ulaşın
+						Özgeçmişim
 					</h1>
 				</div>
 
 			</div>
 
 		</div>
-
-	</header>
-	
-	<main>
+    </header>
+    <main>
 
 		<div class="container">
-			
-			<form action="git.html" name="Form" onsubmit="return control()">
 
-				<div class="form-group">
-					<label for="name">İsim</label>
-					<input type="text" name="name" class="form-control" placeholder="İsminizi Girin">							
-					<small class="form-text text-muted">Zorunlu alan</small>
-				</div>
+			<div class="row">
 
-				<div class="form-group">
-					<label for="email">Email</label>
-					<input type="text" name="email" class="form-control" placeholder="Emailinizi girin.">
-					<small class="form-text text-muted">Zorunlu alan</small>
-				</div>
+				<div class="card my-3 ">		
+					<div class="card-body">
+						<h4 class="card-title">Talha İmran Göneç</h4>
+						<p class="card-text">Özgeçmiş Sayfası</p>
+						<p class="card-text">Adapazarı, Sakarya</p>
+						
+						<p class="card-text">talhagonec@gmail.com</p>
+						<p class="card-text">talha.gonec@ogr.sakarya.edu.tr</p>
+					</div>
+			</div>
 
-				<div class="form-group">
-					<label for="message">Mesaj</label>
-					<textarea name="message" id="message" rows="5" class="form-control"></textarea>
-				</div>
-
-				<button class="btn btn-info" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
-
-				<button class="btn btn btn-info" type="submit" id="sub">Gönder</button>
 
 				<br><br><br>
 
-			</form>
+			<table class="table">
+					<thead class="table-info">
+						<tr>
+							<th>Bilgilerim</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>HMTL, CSS, Orta Seviye</td>
+						</tr>
+
+						<tr>
+							<td>C++, Düşük Seviye</td>
+						</tr>
+
+						<tr>
+							<td>C#, Orta Seviye</td>
+						</tr>
+
+					</tbody>
+			
+			</table>
+
+			<br><br><br>
+
+			<table class="table">
+					<thead class="table-info">
+						<tr>
+							<th>Eğitim Durumu</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Sakarya Üniversitesi, Bilgisayar Mühendisliği, 1. Sınıf</td>
+						</tr>
+
+						<tr>
+							<td>Atatürk Anadolu Lisesi</td>
+						</tr>	
+
+					</tbody>
+			
+			</table>
+
+			<br><br><br>
+
+			<table class="table">
+					<thead class="table-info">
+						<tr>
+							<th>Yabancı Dil</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td>İngilizce</td>
+						</tr>	
+
+					</tbody>
+			
+			</table>			
+
+			</div>
 
 		</div>
 
 	</main>
-
-
-	<footer class="py-5 bg-info text-white text-center">
-		Web-Teknolojileri-Projesi © Mehmet Bedir Sevimli 2022
-	</footer>
 
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-	<!-- JAVASCRIPT -->
-    <script>
-		function control()
-		{
-			var x = document.forms["Form"]["name"].value;
-			if (x == "") 
-			{
-				alert("İsim boş bırakılamaz");
-				return false;
-			}
-
-			var y = document.forms["Form"]["email"].value;
-			if (y == "") 
-			{
-				alert("Mail Kısmı Boş bırakılamaz");
-				return false;
-			}
-
-			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
-			if (forMail.test(y) == false) 
-			{
-				alert("Geçersiz Mail Adresi!!!");
-				return false;
-			}
-
-
-		}	
-
-    </script>	
-
-	
-
 </body>
-
 </html>
