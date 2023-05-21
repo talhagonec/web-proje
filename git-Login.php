@@ -24,7 +24,7 @@
 
 		<div class="container">
 		
-			<a href="web.html" class="navbar-brand text-white">
+			<a href="index.html" class="navbar-brand text-white">
 	  		  <i class="fas fa-grin-wink"></i>
 	  		   Talha
 	      	</a>
@@ -37,7 +37,7 @@
 				<ul class="navbar-nav ml-auto ">
 
 					<li class="nav-item">
-						<a href="web.html" class="nav-link active  text-white">
+						<a href="index.html" class="nav-link active  text-white">
 	      				Anasayfa
 	      				</a></li>
 
